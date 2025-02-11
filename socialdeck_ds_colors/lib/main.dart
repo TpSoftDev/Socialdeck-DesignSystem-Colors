@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: AppColors.warmOffWhite[700],
         appBar: AppBar(
           title: Text('Social Deck'),
           backgroundColor: AppColors.warmOffWhite[700],
