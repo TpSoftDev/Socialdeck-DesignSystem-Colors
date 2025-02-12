@@ -31,6 +31,22 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset('assets/icons/Icon/Home/36/Fill.svg'),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset('assets/icons/Icon/Store/36/Fill.svg'),
+              label: 'Shop',
+            ),
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset('assets/icons/Icon/Profile/36/Fill.svg'),
+              label: 'Profile',
+            ),
+          ],
+        ),
         body: Column(
           children: [
             SvgPicture.asset('assets/icons/Icon/Logo/36.svg'),
