@@ -21,40 +21,71 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColors.warmOffWhite[700],
           actions: [
             Padding(
-              padding: const EdgeInsets.only(right: 17.0),
+              padding: const EdgeInsets.only(right: 16.0),
               child: SvgPicture.asset(
-                'assets/icons/Icon/Logo/144.svg',
+                'assets/icons/defaultStroke/Socialdeck Logo.svg',
                 // You might want to adjust the size if needed
-                width: 35,
-                height: 35,
+                width: 36,
+                height: 36,
               ),
             ),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
           items: [
             BottomNavigationBarItem(
-              icon: SvgPicture.asset('assets/icons/Icon/Home/36/Fill.svg'),
-              label: 'Home',
+              icon: SvgPicture.asset(
+                'assets/icons/defaultStroke/Home.svg',
+                width: 36,
+                height: 36,
+              ),
+              label: '',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset('assets/icons/Icon/Store/36/Fill.svg'),
-              label: 'Shop',
+              icon: SvgPicture.asset(
+                'assets/icons/defaultStroke/Friends.svg',
+                width: 36,
+                height: 36,
+              ),
+              label: '',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset('assets/icons/Icon/Profile/36/Fill.svg'),
-              label: 'Profile',
+              icon: SvgPicture.asset(
+                'assets/icons/defaultStroke/Deck.svg',
+                width: 36,
+                height: 36,
+              ),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                'assets/icons/defaultStroke/Store.svg',
+                width: 36,
+                height: 36,
+              ),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                'assets/icons/defaultStroke/Profile.svg',
+                width: 36,
+                height: 36,
+              ),
+              label: '',
             ),
           ],
         ),
-        body: Column(
+        /*body: Column(
           children: [
             SvgPicture.asset('assets/icons/Icon/Logo/36.svg'),
             SvgPicture.asset('assets/icons/Icon/Logo/144.svg'),
             SvgPicture.asset('assets/icons/Icon/Add/Button/Large.svg'),
             SvgPicture.asset('assets/icons/Icon/Apple/24.svg'),
           ],
-        ),
+        ),*/
       ),
     );
   }
