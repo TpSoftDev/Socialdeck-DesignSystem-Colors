@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'Design_System /colors.dart';
+import 'Design_System /Utils/Themes/colors.dart';
 
 void main() {
   runApp(const MyApp());
