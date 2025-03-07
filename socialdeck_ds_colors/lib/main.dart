@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'Design_System /Utils/Themes/colors.dart';
+import 'package:socialdeck_ds_colors/Design_System%20/Utils/constants/image_strings.dart';
+import 'Design_System /Utils/constants/app_colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,10 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: AppColors.warmOffWhite[700],
+        backgroundColor: SDeckAppColors.light,
         appBar: AppBar(
           title: Text('Social Deck'),
-          backgroundColor: AppColors.warmOffWhite[700],
+          backgroundColor: SDeckAppColors.light,
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 16.0),
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                'assets/icons/defaultStroke/Deck.svg',
+                SDeckImages.deckStroke,
                 width: 36,
                 height: 36,
               ),
