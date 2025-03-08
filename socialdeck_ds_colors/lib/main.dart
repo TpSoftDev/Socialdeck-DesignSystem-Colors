@@ -3,7 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/Themes/custom_themes/typography.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/Themes/theme.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/constants/image_strings.dart';
-import 'Design_System /Utils/constants/app_colors.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: SDeckAppTheme.lightTheme.scaffoldBackgroundColor,
         appBar: AppBar(
-          title: Text('Socialdeck', style: SDeckTypography.darkTextTheme.H3),
+          title: Text('Socialdeck', style: SDeckTypography.lightTextTheme.H4),
           backgroundColor: SDeckAppTheme.lightTheme.scaffoldBackgroundColor,
           actions: [
             Padding(
@@ -38,6 +39,13 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+
+        //Body
+        body: const Center(
+          child: Text('Hello, World!'),
+        ),
+
+        //Bottom Navigation Bar
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           showSelectedLabels: false,
