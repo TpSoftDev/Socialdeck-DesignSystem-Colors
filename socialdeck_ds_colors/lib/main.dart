@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(right: 16.0),
               child: SvgPicture.asset(
-                'assets/icons/defaultStroke/Socialdeck Logo.svg',
+                SDeckImages.socialdeckLogo,
                 // You might want to adjust the size if needed
                 width: 36,
                 height: 36,
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           items: [
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                'assets/icons/defaultStroke/Home.svg',
+                SDeckImages.homeStroke,
                 width: 36,
                 height: 36,
               ),
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                'assets/icons/defaultStroke/Friends.svg',
+                SDeckImages.friendsStroke,
                 width: 36,
                 height: 36,
               ),
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                'assets/icons/defaultStroke/Store.svg',
+                SDeckImages.storeStroke,
                 width: 36,
                 height: 36,
               ),
@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                'assets/icons/defaultStroke/Profile.svg',
+                SDeckImages.profileStroke,
                 width: 36,
                 height: 36,
               ),
@@ -79,14 +79,6 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        /*body: Column(
-          children: [
-            SvgPicture.asset('assets/icons/Icon/Logo/36.svg'),
-            SvgPicture.asset('assets/icons/Icon/Logo/144.svg'),
-            SvgPicture.asset('assets/icons/Icon/Add/Button/Large.svg'),
-            SvgPicture.asset('assets/icons/Icon/Apple/24.svg'),
-          ],
-        ),*/
       ),
     );
   }
