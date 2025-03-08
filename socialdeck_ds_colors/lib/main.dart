@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:socialdeck_ds_colors/Design_System%20/Utils/Themes/custom_themes/typography.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/constants/image_strings.dart';
 import 'Design_System /Utils/constants/app_colors.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: SDeckAppColors.light,
         appBar: AppBar(
-          title: Text('Social Deck'),
+          title: Text('Socialdeck', style: SDeckTypography.lightTextTheme.H3),
           backgroundColor: SDeckAppColors.light,
           actions: [
             Padding(

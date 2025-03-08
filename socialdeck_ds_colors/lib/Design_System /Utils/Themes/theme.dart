@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/constants/app_colors.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/constants/color_palette.dart';
+import 'package:socialdeck_ds_colors/Design_System%20/Utils/Themes/custom_themes/typography.dart';
 
 //------------------------------ theme.dart ----------------------------------//
 // This file combines all the individual theme components into complete themes.
@@ -19,12 +20,8 @@ class SDeckAppTheme {
     fontFamily: 'Poppins', // Set the default font family
     brightness: Brightness.light, // Set the brightness to light for light mode
     primaryColor: SDeckAppColors.light, // Set the primary color
-    scaffoldBackgroundColor: SDeckAppColors.light, // Set the scaffold background color
-  );
-
-  static ThemeData darkTheme = ThemeData(
-    useMaterial3: true, // Use Material 3 design principles
-    fontFamily: 'Poppins', // Set the default font family
-    brightness: Brightness.dark, // Set the brightness to dark for dark mode
+    scaffoldBackgroundColor:
+        SDeckAppColors.light, // Set the scaffold background color
+    textTheme: SDeckTypography.lightTextTheme, // Use our custom typography
   );
 }
