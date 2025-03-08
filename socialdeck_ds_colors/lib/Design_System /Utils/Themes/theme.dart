@@ -19,9 +19,19 @@ class SDeckAppTheme {
     useMaterial3: true, // Use Material 3 design principles
     fontFamily: 'Poppins', // Set the default font family
     brightness: Brightness.light, // Set the brightness to light for light mode
-    primaryColor: SDeckAppColors.light, // Set the primary color
+    primaryColor: SDeckAppColors.lightThemePrimary, // Set the primary color
     scaffoldBackgroundColor:
-        SDeckAppColors.light, // Set the scaffold background color
+        SDeckAppColors.backgroundLight, // Set the scaffold background color
     textTheme: SDeckTypography.lightTextTheme, // Use our custom typography
+  );
+
+  static ThemeData darkTheme = ThemeData(
+    useMaterial3: true, // Use Material 3 design principles
+    fontFamily: 'Poppins', // Set the default font family
+    brightness: Brightness.dark, // Set the brightness to dark for dark mode
+    primaryColor: SDeckAppColors.darkThemePrimary, // Set the primary color
+    scaffoldBackgroundColor:
+        SDeckAppColors.backgroundDark, // Set the scaffold background color
+    textTheme: SDeckTypography.darkTextTheme, // Use our custom typography
   );
 }

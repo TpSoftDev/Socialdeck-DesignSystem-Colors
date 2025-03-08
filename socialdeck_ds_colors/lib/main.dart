@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/Themes/custom_themes/typography.dart';
+import 'package:socialdeck_ds_colors/Design_System%20/Utils/Themes/theme.dart';
 import 'package:socialdeck_ds_colors/Design_System%20/Utils/constants/image_strings.dart';
 import 'Design_System /Utils/constants/app_colors.dart';
 
@@ -15,12 +16,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      themeMode: ThemeMode.system, //Flutter detects the theme of the phone
+      theme: SDeckAppTheme.lightTheme, //Light theme
+      darkTheme: SDeckAppTheme.darkTheme, //Dark theme
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: SDeckAppColors.light,
+        backgroundColor: SDeckAppTheme.lightTheme.scaffoldBackgroundColor,
         appBar: AppBar(
-          title: Text('Socialdeck', style: SDeckTypography.lightTextTheme.H3),
-          backgroundColor: SDeckAppColors.light,
+          title: Text('Socialdeck', style: SDeckTypography.darkTextTheme.H3),
+          backgroundColor: SDeckAppTheme.lightTheme.scaffoldBackgroundColor,
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 16.0),

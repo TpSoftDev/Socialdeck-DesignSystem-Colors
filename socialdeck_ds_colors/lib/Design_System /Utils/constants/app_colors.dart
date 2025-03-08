@@ -11,11 +11,34 @@ import 'color_palette.dart';
 class SDeckAppColors {
   SDeckAppColors._(); // Private constructor to prevent instantiation
 
-  //Text Colors
-  static final Color textPrimary = SDeckColorPalette.coolGray[500]!;
+
+  // App Basic Colors
+
+
+  // Text Colors
+
 
   // Background Colors
-  static final Color light = SDeckColorPalette.warmOffWhite[500]!;
-  static final Color dark = SDeckColorPalette.coolGray[500]!;
+  static final Color backgroundLight = SDeckColorPalette.warmOffWhite[500]!;
+  static final Color backgroundDark = SDeckColorPalette.slateGray[500]!;
+
+  // Container Colors
+  
+
+  // Button Colors
+
+  // Border Colors
+ 
+
+  // Status Colors
+
+
+  // Neutral Shades - Light Theme
+
+
+  // Theme-specific colors
+  static final Color lightThemePrimary = SDeckColorPalette.warmOffWhite[500]!;
+  static final Color darkThemePrimary = SDeckColorPalette.slateGray[500]!;
+
 
 }
