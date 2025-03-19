@@ -23,12 +23,11 @@ class SDeckAppColors {
   static final Color backgroundDark = SDeckColorPalette.slateGray[500]!;
 
   // Container Colors
-  
 
   // Button Colors
 
   // Border Colors
- 
+
 
   // Status Colors
 
